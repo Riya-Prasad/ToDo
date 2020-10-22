@@ -4,9 +4,10 @@
 body{
 	margin: 0;
 	font-family: 'Cairo', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1rem;
-	background: url('https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-color: #0a0413;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23403e44' fill-opacity='0.13'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 	color: #d9e4dd;
 	display: grid;
 	grid: 
@@ -21,7 +22,7 @@ body{
 	text-align: center;
 	font-size: 3.3rem;
 	font-weight: 900;
-	color: #1fab89;
+	color: #625261;
 	letter-spacing: 2px;
 	word-spacing: 40px;
 }
@@ -114,25 +115,27 @@ form{
 
 .active-list{
 	font-weight: 900;
-	color: cyan;
+	color: #ffc93c;
 }
 
 .todo-list{
 	grid-area: active;
-	background-color: #9ab3f5;
+	background-color: #ffc93c;
 	color: #fbf7f0;
 	word-spacing: 4px;
-	box-shadow: 0 0 15px #32e0c4;
+	border-radius: 10px;
+	box-shadow: 0 0 25px #838383;
 
 }
 
 .todo-header{
-	color: #d9e4dd;
+	color: #bad7df;
 	padding:10px;
 	display: flex;
+	border-radius: 10px 10px 0px 0px;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #1f5f8b;
+	background-color: #2b2e4a;
 }
 
 .list-title{
@@ -200,17 +203,17 @@ form{
 .task:hover .custom-checkbox,
 [type="checkbox"]:focus + label .custom-checkbox{
 	transform: scale(1.2);
-	color: cyan;
+	color: #424874;
 }
 
 
 [type="checkbox"]:checked + label .custom-checkbox{
-	background: #2d6187;
-	border-color: cyan;
+	background: #625772;
+	border-color: #cefff1;
 }
 
 [type="checkbox"]:checked + label {
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .task label::after{
@@ -241,18 +244,21 @@ form{
 	top: 50px;
 	color: #f6f7d7;
 	letter-spacing: 10px;
-	opacity: 0.8;
-
 }
 
 .btn.delete{
+	padding: 5px 17px;
+	background: transparent;
 	font-size: 0.8em;
 	letter-spacing: 1px;
 	opacity: 0.9;
+	border: 2px solid #2b2e4a;
+	border-radius: 5px;
 }
 
 .btn.delete:hover{
-	color: #fddb3a;
+	color: #a6b1e1;
+	border-color: #fddb3a;
 
 }
 
