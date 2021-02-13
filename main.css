@@ -77,35 +77,34 @@ form{
 .new{
 	background: transparent;
 	border: 0;
-	color: inherit;
+	color: #314e52;
 	border-bottom: 1px solid currentColor;
 	font-size: inherit;
 	outline: none;
 	padding: 0.25em;
-
 	transition: border-bottom 150ms ease-in;
 	order: 2;
 }
 
 .new::placeholder{
-	opacity: 0.4;
+	opacity: 0.8;
 	letter-spacing: 1px;
 }
 
 
 .new:focus{
-	border-color: cyan;
+	border-color: #2b2e4a;
 	border-bottom-width: 3px; 
 }
 
 .new:focus::placeholder{
-	opacity: 0.2;
+	opacity: 0.5;
 }
 
 
 .new.list{
-	font-size: 0.9rem;
-	font-weight: 550;
+	font-size: 1rem;
+	font-weight: 600;
 }
 
 .new.task{
